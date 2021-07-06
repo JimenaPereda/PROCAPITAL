@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Modal from 'react-modal';
-import '../Modals/icashStyle.css';
+import '../iCash/icashStyle.css';
 
 function IcashModal() {
 	const [IcashIsOpen, setIcashIsOpen] = useState(false);

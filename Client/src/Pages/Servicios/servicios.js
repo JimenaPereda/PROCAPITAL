@@ -5,7 +5,8 @@ import './serviciostyle.css';
 import nominaImg from '../../Components/Images/flujo.png';
 import cashImg from '../../Components/Images/loan.png';
 import optiImg from '../../Components/Images/investment.png';
-import IcashModal from '../../Components/Modals/iCashModal';
+import IcashModal from '../../Components/Modals/iCash/iCashModal';
+import OptiModal from '../../Components/Modals/Optimaxx/Optimaxx';
 
 
 
@@ -69,7 +70,7 @@ function Servicios() {
 							opciones que permiten una inversión proactiva con mayor dinamismo, lo cual maximiza el
 							potencial de crecimiento de tu patrimonio en el largo plazo.
 						</Card.Text>
-						<Button variant="primary">Conoce Más ✚</Button>
+						<OptiModal/>
 					</Card.Body>
 				</Card>
 			</div>
