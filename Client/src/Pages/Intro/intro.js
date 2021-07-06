@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link}  from 'react-router-dom';
 import MainLogo from "../../Components/Images/logocuadrado.jpg";
 import './introstyle.css';
 
@@ -12,7 +12,9 @@ function IntroPage() {
 
         <div className="introback">
           
-        <img alt="somevalue" className="LogoImg" src={MainLogo} />
+        
+        <Link to="/Nosotros" className="link"><img alt="somevalue" className="LogoImg" src={MainLogo} /></Link>
+        
           
         </div>
           

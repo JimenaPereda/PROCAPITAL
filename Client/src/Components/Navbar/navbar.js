@@ -1,6 +1,7 @@
 import React from "react";
 import NavLogo from "../Images/logoPro.jpg"
 import './navbarstyle.css';
+import Menu from "../Menu/menu";
 
 
 
@@ -11,9 +12,12 @@ function NavBar() {
           
         <div className="Nav">
         <img alt="somevalue" className="NavImg" src={NavLogo} />
-      
-              </div>
+        <Menu />
           
+       </div>
+
+       
+       
           
       );
   }

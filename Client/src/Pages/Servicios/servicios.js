@@ -1,11 +1,20 @@
-import React from 'react';
-import {  Card, Button } from 'react-bootstrap';
+import React  from 'react';
+import { useHistory } from 'react-router-dom';
+import { Card, Button } from 'react-bootstrap';
 import './serviciostyle.css';
 import nominaImg from '../../Components/Images/flujo.png';
 import cashImg from '../../Components/Images/loan.png';
 import optiImg from '../../Components/Images/investment.png';
+import IcashModal from '../../Components/Modals/iCashModal';
+
+
+
 
 function Servicios() {
+	
+	const history = useHistory();
+  console.log(history.location)
+	
 	return (
 		<div class="containerService">
 			<div class="CARD1">
@@ -16,8 +25,9 @@ function Servicios() {
 							<h2>Estrategias de administración</h2>
 						</Card.Title>
 						<Card.Text>
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
+							Contamos con más de 80 especialistas que te ayudarán a exponenciar tus ahorros en flujo,
+							utilidades y nómina. te llevaremos de la mano con asesoría legal, fiscal y de inversión
+							Concreta una cita para ver cómo podemos ayudarte.
 						</Card.Text>
 					</Card.Body>
 				</Card>
@@ -27,13 +37,18 @@ function Servicios() {
 					<Card.Img variant="top" src={cashImg} />
 					<Card.Body>
 						<Card.Title>
-							<h2>iCash <br></br> Prestamos a empleados</h2>
+							<h2>
+								iCash <br></br> Prestamos a empleados
+							</h2>
 						</Card.Title>
 						<Card.Text>
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
+							¿Cuántos empleados te piden un préstamo al mes? Tenemos la solución con préstamos personales
+							con descuentos vía nómina a trabajadores en activo. Contamos con dos productos: Crédito
+							tradicional y Anticipo de nómina donde la empresa no corre ningún riesgo por cuentas
+							incobrables, el riesgo es de PROCAPITAL.
 						</Card.Text>
-						<Button variant="primary">Conoce Más ✚</Button>
+					 <IcashModal />
+						
 					</Card.Body>
 				</Card>
 			</div>
@@ -42,11 +57,17 @@ function Servicios() {
 					<Card.Img variant="top" src={optiImg} />
 					<Card.Body>
 						<Card.Title>
-							<h2>OPTIMAXX by Allianz<br></br>Portafolios de ahorro e inversión </h2>
+							<h2>
+								OPTIMAXX by Allianz<br></br>Portafolios de ahorro e inversión{' '}
+							</h2>
 						</Card.Title>
 						<Card.Text>
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
+							OptiMaxx plus es un plan de retiro individual que te permitirá construir, desde hoy, un
+							patrimonio para tu futuro. OptiMaxx plus te ofrece Alternativas de Inversión con distintos
+							perfiles de riesgos y distintas monedas. Como inversionista podrás optar desde alternativas
+							que te ofrezcan atractivos rendimientos con un incomparable nivel de seguridad hasta
+							opciones que permiten una inversión proactiva con mayor dinamismo, lo cual maximiza el
+							potencial de crecimiento de tu patrimonio en el largo plazo.
 						</Card.Text>
 						<Button variant="primary">Conoce Más ✚</Button>
 					</Card.Body>
